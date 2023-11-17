@@ -1,0 +1,344 @@
+/* styles.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  margin: auto;
+  padding: 20px 10px 10px 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 50px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: black;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.dashboard-button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.button-container {
+  margin-bottom: 10px; 
+}
+
+.button-container p{
+  font-family: 'serif';
+}
+
+.dashboard-button:hover {
+  background-color: gray
+}
+
+.dashboard-goBack-button {
+  position: absolute;
+  height: 30px;
+  bottom: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-goBack-button:hover {
+  background-color: gray;
+}
+
+
+
+.account-creation-container,
+.user-details-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.account-creation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-creation-form label {
+  margin-bottom: 10px;
+}
+
+.account-creation-form input {
+  padding: 10px;
+  margin-top: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.account-creation-form button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.account-creation-form button:hover {
+  background-color: gray;
+}
+
+.success-message {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.user-details-table {
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-table h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  margin-bottom: 0px;
+  color: #333;
+}
+
+.user-details-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+.user-details-table th,
+.user-details-table td {
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+}
+
+.user-details-table th {
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.user-details-table td {
+  background-color: #f9f9f9;
+}
+
+.user-details-table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.user-details-table {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-container input {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  margin-top: auto;
+  display: flex;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: darkgray;
+}
+.not-found-message {
+  color: red;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal button {
+  background-color: black;
+  margin: 10px 10px;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: gray;
+}
+
+.user-row {
+  transition: background-color 0.3s;
+}
+
+.user-details-table .highlightedRow {
+  background-color: darkgreen;
+  font-weight: bold;
+}
+
+.modal-content {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-text {
+  white-space: pre-line; 
+  font-family: 'Courier New', monospace; 
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.report-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.report-buttons button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.report-buttons button:hover {
+  background-color: gray;
+}
+
+.dashboard-description p {
+  position: fixed;
+  top: 120px;
+  left: 10px;
+  font-family:'serif' ;
+  font-size: 20px;
+}
+
+.dashboard-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-description li {
+  margin-bottom: 5px;
+}
+
+.not-found-message {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  color: red;
+}
