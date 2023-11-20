@@ -2,12 +2,12 @@
 A simple user management dashboard built with React for managing user accounts and viewing user details.
 
 ## Table of Contents
-Introduction
-Getting Started
-Features
-Usage
-Components
-Dummy Screenshots
+1. Introduction
+2. Getting Started
+3. Features
+4. Usage
+5. Components
+6. Dummy Screenshots
 
 ## Introduction
 Welcome to the User Management Dashboard! This dashboard provides a user-friendly interface for managing user accounts and viewing user details. Users can create new accounts, view existing user details, and generate reports for specific users.
@@ -66,8 +66,7 @@ Git: Version control system to clone the repository.
 Clone the Repository:
 
 Open your terminal or command prompt and run the following command:
-`git clone <repository-url>`
-Replace `<repository-url>` with the URL of the repository where the User Management Dashboard code is hosted.
+`git clone https://github.com/Shaliniiiiii/user-management-dashboard`
 
 ## Navigate to the Project Directory:
 
